@@ -1,0 +1,140 @@
+:root{
+    background-color: rgba(0, 255, 255, 0.493);
+    margin: 150px;
+}
+/*Tabla superior*/
+.menu{
+    background-color: rgb(33, 134, 216);
+    border-color:  rgb(33, 134, 216);
+    border-style: solid;
+    border-width: 22px;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: sticky;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+/*Menú izquierdo*/
+nav{
+    border: solid 2px;
+    font-size: 7px;
+    left: 0px;
+    position: fixed;
+    text-align: center;
+}
+
+.espasio{
+    visibility: hidden;
+}
+/*Cuerpo*/
+main{
+    background-color: rgb(10, 0, 149);
+    border-bottom-style: solid;
+    margin: 0 auto;
+    padding-bottom: 120%;
+    position: relative;
+}
+
+/*Borde imágenes*/
+div[class^='img']{
+    background-color: #fff;
+    border: 2px black solid;
+    float: left;
+    padding: 20px;
+    padding-top: 9px;
+}
+
+.pieImagen{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+/*Posición y rotación de imágenes*/
+.img1{
+    margin-left: 100px;
+    margin-top: 200px;
+    position: absolute;
+    transform: rotate(-45deg);
+    z-index: 9;
+}
+
+.img2{
+    margin-left: 306px;
+    margin-top: 237px;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 7;
+}
+
+.img3{
+    margin-left: 520px;
+    margin-top: 100px;
+    position: absolute;
+    transform: rotate(-17deg);
+    z-index: 6;
+}
+
+.img4{
+    margin-left: 80px;
+    margin-top: 650px;
+    position: absolute;
+    transform: rotate(12deg);
+}
+
+.img5{
+    margin-left: 285px;
+    margin-top: 750px;
+    position: absolute;
+    transform: rotate(12deg);
+}
+
+.img6{
+    margin-left: 530px;
+    margin-top: 750px;
+    position: absolute;
+    transform: rotate(12deg);
+    z-index: 8;
+}
+/*Tamaño foto*/
+.f1, .f2, .f5{
+    height: 150px;
+    width: 250px;
+}
+
+.f3{
+    height: 400px;
+    width: 200px;
+}
+
+.f4, .f6{
+    height: 170px;
+    width: 250px;
+}
+/*Al pasar el ratón sobre las imágenes aumenta tamaño*/
+.img1:hover{
+    transform: rotate(-45deg) scale(1.2);
+}
+
+.img2:hover{
+    transform: rotate(45deg) scale(1.2);
+}
+
+.img3:hover{
+    transform: rotate(-17deg) scale(1.2);
+}
+
+.img4:hover, .img5:hover, .img6:hover{
+    transform: rotate(12deg) scale(1.2);
+}
+/*Al pasar el ratón la imágen se ponga por encima del resto*/
+div[class^='img']:hover{
+    z-index: 9;
+}
+
+.espacio{
+    display: none;
+}

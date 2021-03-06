@@ -1,0 +1,217 @@
+/* CSS menú hamburguesa */
+.skullburger {
+    background: transparent;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.skullburger>input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.skullburger .line {
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(47, 255, 64, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.line:nth-of-type(1) {
+    transform: translateY(-16px);
+}
+
+.line:nth-of-type(3) {
+    transform: translateY(16px);
+}
+
+.skullburger .skull {
+    position: absolute;
+    top: -20px;
+    fill: rgb(0, 0, 0);
+    opacity: 0;
+    height: 25px;
+    width: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.skullburger input:checked~.line.bone {
+    box-shadow: none;
+    width: 25px;
+    height: 4px;
+}
+
+.line.bone:before,
+.line.bone:after {
+    clip-path: url(#bonehead);
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+.line.bone:after {
+    transform: rotate(180deg);
+    left: auto;
+    right: 0;
+}
+
+.skullburger input:checked~.line.bone:before,
+.skullburger input:checked~.line.bone:after {
+    top: -1.5px;
+    width: 7px;
+    height: 7px;
+}
+
+.skullburger input:checked~.line.bone:before {
+    left: -2px;
+}
+
+.skullburger input:checked~.line.bone:after {
+    right: -2px;
+}
+
+.skullburger input:checked~.line:nth-of-type(1) {
+    transform: translate(0, 8px) rotate(25deg);
+}
+
+.skullburger input:checked~.line:nth-of-type(2) {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.skullburger input:checked~.line:nth-of-type(3) {
+    transform: translate(0, 8px) rotate(-25deg);
+}
+
+.skullburger input:checked~.skull {
+    transform: scale(1);
+    top: 14px;
+    opacity: 1;
+}
+
+/* Fin css menú hamburguesa */
+
+#menu1 li {
+    display: block;
+    float: left;
+    padding-right: 1.3vw;
+    padding-left: 1.3vw;
+    padding-top: 1vw;
+    padding-bottom: 1.2vw;
+    font-size: 1.3vw;
+}
+
+#menu1 li {
+    display: initial;
+}
+
+#hamburguesa {
+    display: none;
+}
+
+#menu2 li {
+    display: block;
+    font-size: 4vw;
+}
+
+li:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(71, 255, 47);
+}
+
+#contact label {
+    font-size: 3.2vw;
+}
+
+#contact p {
+    font-size: 1.8vw;
+}
+
+.card-body img {
+    position: relative;
+    right: 1.5vw;
+    bottom: 22vw;
+    opacity: 50%;
+}
+
+#seccion,
+#contacto {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+}
+
+#yt{
+    display: initial;
+}
+
+#yt2{
+    display: initial;
+}
+
+@media (max-width: 800px) {
+    .card-text {
+        font-size: 3.5vw;
+    }
+
+    #contact label {
+        font-size: 5vw;
+    }
+
+    .form-group label {
+        font-size: 3vw;
+    }
+
+    #contact p {
+        font-size: 4vw;
+    }
+
+    #menu1 li {
+        display: none;
+    }
+
+    #hamburguesa {
+        display: initial;
+    }
+
+    .card-body img {
+        position: relative;
+        right: 1.5vw;
+        bottom: 40vw;
+        opacity: 50%;
+    }
+
+    #contacto, #seccion{
+        font-size: 5vw;
+    }
+
+    #yt{
+        display: none;
+    }
+
+    #yt2{
+        display: initial;
+    }
+
+}

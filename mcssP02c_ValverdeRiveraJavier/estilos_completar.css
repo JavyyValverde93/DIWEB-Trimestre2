@@ -1,0 +1,198 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+
+  /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+  *{
+    margin: 0;
+  }
+
+  /* Estilo para las fuentes(Font google) en toda la página */
+  *{
+    font-family: "Trirong", serif;
+  }
+/*Aspecto especifico*/
+/* Establecemos el centrado y las dimensiones de los elementos principales con una ancho máximo y mínimo (nav, container, footer)*/
+
+
+/* Estilos para el menú principal (nav)*/
+  /*nav*/
+  nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav ul {
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+
+  nav li{
+      display: block;
+      color: white;
+      padding: 10px;
+      padding-right: 100px;
+      float: left;
+  } 
+    
+
+  /*link*/
+  
+  /*mouse over link*/
+  nav a:hover {    
+    background: darkgray;
+  }
+
+/* Estilos para la cabecera (header)*/
+
+  /* Fondo de la cabecera, imagen con opacidad del 30%*/
+  header div.img{
+    background-image: url(/mcssP02c_ValverdeRiveraJavier/img/neveras.png);
+  }
+  header img{
+    margin: auto;
+    display: block;
+    opacity: 30%;
+    width: 70%;
+  }
+  header .compra{
+    text-align: center;
+    background-color: rgb(122, 223, 113);
+    padding: 20px;
+    float: left;
+    margin-left: 725px;
+    margin-top: -344px;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    padding-bottom: 64px;
+    padding-bottom: 22px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    opacity: 60%;
+    position: relative;
+  }
+  /* Call for action para Comprar , la palabra "compra" en un link sin subrayado*/
+  header a{
+    background-color: red;
+    padding: 5px;
+    color: white;
+  }
+  .compra a:hover{
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+/* Elemento principal (main) con las 3 cards */
+  main h2{
+    text-align: center;
+  }
+  
+  /* Línea separador de elementos */
+  main hr{
+    width: 30%;
+    border: 1px solid red;
+    text-align: center;
+    margin: auto;
+  }
+  /* Estilos para la zona de las cards */
+  .card img{
+    width: 175px;
+    height: 175px;
+  }
+
+  .card{
+    align-items: center;
+    margin: 2px;
+  }
+
+
+  main div{
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+/* Sección con la nevera y los tres párrafos descriptivos (section)*/
+
+section.nevera img{
+  margin-left: auto;
+  padding-top: 10px;
+  width: 500px;
+}
+
+section.nevera #text{
+  margin-right: 150px;
+  font-weight: bolder;
+}
+  /* Mostrarmos la primera letra con un borde diferente */
+  #text p::first-letter{
+    font-size: 35px;
+    border: solid black 1px;
+    color: red;
+    margin-right: 5px;
+  }
+
+/* Sección para la galería de imágenes (section)*/
+section.gallery article{
+  display: inline;
+}
+.gallery img{
+  padding: 2px;
+  width: 150px;
+  height: 100px;
+}
+section.gallery div{
+  text-align: center;
+  margin-right: 125px;
+  margin-left: 125px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+/* Estilos para el pie de página (footer)*/
+footer{
+  position: absolute;
+  padding-bottom: 0;
+  text-align: center;
+  background-color: rgb(47, 155, 146);
+  width: 100%;
+  border: 1.5px rgb(12, 58, 209) solid;
+  color: rgb(230, 255, 4)
+}
+footer div{
+  text-align: left;
+}
+footer img{
+  width: 50px;
+}
+footer i{
+  color: orange;
+  font-size: 35px;
+  padding-right: 5px;
+}
+
+  /*link icons fontawesome*/
+
+    /* unvisited link */
+    footer a:link{
+      color: rgb(31, 5, 146);
+    }
+    /* visited link */
+    footer a:visited{
+      color: rgb(28, 180, 14);
+    }
+    /* mouse over link */
+    footer i:hover{
+      font-size: 4rem;
+      color: rgb(13, 84, 238);
+    }
+    /* selected link */
+
+

@@ -1,0 +1,124 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+* {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: responsive;
+}
+
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+* {
+  box-sizing: border-box;
+}
+
+/* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+* {
+  margin: 0%;
+}
+
+/*Aspecto especifico*/
+/* classe .container - fuente, color, 80% ancho y centrado*/
+.container {
+  font-family: monospace;
+  color: lawngreen;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}
+
+/*color de la letra específico*/
+
+/*La cabecera*/
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* El contenedor flex para la primera fila de contenido .content_wrapper. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+.content_wrapper {
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+
+
+/* El menú */
+nav {
+  position: fixed;
+  left: 0;
+  z-index: 10;
+  text-align: left;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav li:hover {
+  font-size: 1.3rem;
+  background-color: rgb(93, 93, 93);
+}
+
+/* El elemento principal main*/
+main img {
+  padding: 15px;
+  width: 80%;
+}
+
+main {
+  font-size: 1vw;
+  margin: 15px;
+  border: black 1px solid;
+}
+
+/* Artículo. Imágenes pequeñas */
+article {
+  font-size: 2vw;
+  margin: 15px;
+  border: black 1px solid;
+}
+
+article img {
+  padding: 15px;
+  width: 70%;
+}
+
+/* El contenedor flex para la segunda fila de contenido .articles. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+.articles {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+
+}
+
+
+
+/* Pie de la página */
+/* El contenedor flex para la tercera fila de contenido footer. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+.footer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 20px;
+  border: black solid 1px;
+  align-items: center;
+  font-size: 1.4vw;
+  flex-wrap: nowrap;
+}
+
+footer div img {
+  width: 50px;
+}
+
+.copyright {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer a:hover {
+  font-size: 4rem;
+  color: rgb(13, 84, 238);
+}

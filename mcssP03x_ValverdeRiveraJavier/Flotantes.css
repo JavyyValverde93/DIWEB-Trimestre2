@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+}
+
+.menu ul {
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.menu li{
+    display: block;
+    color: white;
+    padding: 10px;
+    padding-right: 100px;
+    float: left;
+} 
+    
+nav li:hover {    
+    background: darkgray;
+}
+
+.izq ul{
+    float: left;
+    padding: 0;
+    padding-bottom: 23%;
+    background-color: #000000;
+}
+
+.izq li{
+    color: white;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+div.row{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+div.col{
+    text-align: center;
+}
+
+#cuadro .col{
+    border: black 2px solid;
+    border-radius: 14px;
+}
+
+.col img{
+    width: 250px;
+}
+
+footer{
+    background-color: rgb(243, 234, 234);
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0px;
+    display: block;
+}
+
+
